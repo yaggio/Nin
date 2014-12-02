@@ -15,6 +15,7 @@ class TitleScene : public cocos2d::Layer
 {
   private:
     cocos2d::EventListenerTouchOneByOne *eventListener;
+    cocos2d::Node *node;
 
   public:
     static cocos2d::Scene* createScene();

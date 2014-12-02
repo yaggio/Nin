@@ -31,23 +31,8 @@ bool TitleScene::init()
   //Welcome Message
   auto windowSize = Director::getInstance()->getWinSize();
   
-  auto node = CSLoader::getInstance()->createNodeFromProtocolBuffers("MainScene.csb");
+  Node* node = CSLoader::getInstance()->createNodeFromProtocolBuffers("MainScene.csb");
   this->addChild(node);
-  
-  // move cloud)
-  auto cloud = dynamic_cast<Sprite*>(node->getChildByTag(10));
-  
-  Vec2 point = cloud->getPosition();
-  log("x座標は%fです", point.x);
-  log("y座標は%fです", point.y);
-  int move_x;
-  if (point.x < 640 - cloud->getContentSize().width) {
-    move_x = 640;
-  } else {
-    move_x = 0;
-  }
-  cloud->runAction(MoveTo::create(10.0f, Point(640, point.y)));
-
   return true;
 }
 bool TitleScene::onTouchBegan(Touch* pTouch, Event* pEvent)
