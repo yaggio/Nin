@@ -19,9 +19,11 @@ class TitleScene : public cocos2d::Layer
 
   public:
     static cocos2d::Scene* createScene();
+    cocos2d::Sprite *cloud;
     virtual bool init();
     CREATE_FUNC(TitleScene);
-    // EVENT 
+    void update(float delta);
+    // EVENT
     bool onTouchBegan(cocos2d::Touch *touch, cocos2d::Event *event);
     void onTouchMoved(cocos2d::Touch *touch, cocos2d::Event *event);
     void onTouchEnded(cocos2d::Touch *touch, cocos2d::Event *event);
