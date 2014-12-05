@@ -7,10 +7,12 @@
 //
 
 #include "TitleScene.h"
+#include "OpScene.h"
 #include "ui/CocosGUI.h"
 #include "cocostudio/CocoStudio.h"
 
 using namespace cocos2d;
+using namespace cocos2d::ui;
 using namespace std;
 
 USING_NS_CC;
@@ -31,11 +33,21 @@ bool TitleScene::init()
   //Welcome Message
   auto windowSize = Director::getInstance()->getWinSize();
   
-  node = CSLoader::getInstance()->createNodeFromProtocolBuffers("MainScene.csb");
+  node = CSLoader::getInstance()->createNodeFromProtocolBuffers("TitleScene.csb");
   this->addChild(node);
+  auto start = dynamic_cast<Button*>(node->getChildByTag(15));
+  start->addTouchEventListener(this, toucheventselector(TitleScene::pushStart));
   
   this->scheduleUpdate();
   return true;
+}
+void TitleScene::pushStart(Ref *sender, TouchEventType type)
+{
+  auto btn = sender;
+  MenuItem* menuItem = (MenuItem*)sender;
+  log("click tag:%i", menuItem->getTag());
+  Director::getInstance()->replaceScene(TransitionFade::create(1.0f, OpScene::createScene(), Color3B::WHITE));
+
 }
 void TitleScene::update(float delta){
   int clouds[3] = {10, 11, 12};
@@ -52,18 +64,4 @@ void TitleScene::update(float delta){
     }
     c->setPosition(moved_x, pos.y);
   }
-}
-bool TitleScene::onTouchBegan(Touch* pTouch, Event* pEvent)
-{
-  return true;
-}
-
-void TitleScene::onTouchMoved(Touch* pTouch, Event* pEvent)
-{
-  return;
-}
-
-void TitleScene::onTouchEnded(Touch* pTouch, Event* pEvent)
-{
-  return;
 }

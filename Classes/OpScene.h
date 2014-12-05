@@ -1,13 +1,13 @@
 //
-//  TitleScene.h
+//  OpScene.h
 //  Nin
 //
-//  Created by 矢島 新太郎 on 2014/11/28.
+//  Created by gama6 on 2014/12/04.
 //
 //
 
-#ifndef __Nin__TitleScene__
-#define __Nin__TitleScene__
+#ifndef __Nin__OpScene__
+#define __Nin__OpScene__
 
 #include "cocos2d.h"
 #include "ui/CocosGUI.h"
@@ -16,19 +16,17 @@
 using namespace cocos2d;
 using namespace cocos2d::ui;
 using namespace std;
-
-class TitleScene : public cocos2d::Layer
+class OpScene : public cocos2d::Layer
 {
   private:
     cocos2d::EventListenerTouchOneByOne *eventListener;
     cocos2d::Node *node;
-    void pushStart(cocos2d::Ref *sender, TouchEventType type);
+    void pushSkip(cocos2d::Ref *sender, TouchEventType type);
 
   public:
     static cocos2d::Scene* createScene();
     virtual bool init();
-    CREATE_FUNC(TitleScene);
-    void update(float delta);
+    CREATE_FUNC(OpScene);
 };
 
-#endif /* defined(__Nin__TitleScene__) */
+#endif /* defined(__Nin__OpScene__) */

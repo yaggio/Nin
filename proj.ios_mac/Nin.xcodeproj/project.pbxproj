@@ -22,8 +22,6 @@
 		46880B8219C43A67006E1F66 /* HelloWorld.png in Resources */ = {isa = PBXBuildFile; fileRef = 46880B7A19C43A67006E1F66 /* HelloWorld.png */; };
 		46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8419C43A87006E1F66 /* AppDelegate.cpp */; };
 		46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8419C43A87006E1F66 /* AppDelegate.cpp */; };
-		46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */; };
-		46880B8B19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */; };
 		503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 503AE0F617EB97AB00D1A890 /* Icon.icns */; };
 		503AE10017EB989F00D1A890 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FB17EB989F00D1A890 /* AppController.mm */; };
 		503AE10117EB989F00D1A890 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FC17EB989F00D1A890 /* main.m */; };
@@ -66,11 +64,15 @@
 		D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620D132DFF430009C878 /* AVFoundation.framework */; };
 		D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
 		D6B0611B1803AB670077942B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B0611A1803AB670077942B /* CoreMotion.framework */; };
+		F832F6D01A31D569006D05A0 /* OpScene.csb in Resources */ = {isa = PBXBuildFile; fileRef = F832F6CE1A31D569006D05A0 /* OpScene.csb */; };
+		F832F6D11A31D569006D05A0 /* TitleScene.csb in Resources */ = {isa = PBXBuildFile; fileRef = F832F6CF1A31D569006D05A0 /* TitleScene.csb */; };
+		F832F6D41A31D7D2006D05A0 /* MapScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F832F6D21A31D7D2006D05A0 /* MapScene.cpp */; };
 		F8925AA61A289F9500BA5388 /* TitleScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8925AA41A289F9500BA5388 /* TitleScene.cpp */; };
 		F8925AAB1A28A17300BA5388 /* cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = F8925AA71A28A17300BA5388 /* cloud.png */; };
 		F8925AAC1A28A17300BA5388 /* Default in Resources */ = {isa = PBXBuildFile; fileRef = F8925AA81A28A17300BA5388 /* Default */; };
 		F8925AAD1A28A17300BA5388 /* MainScene.csb in Resources */ = {isa = PBXBuildFile; fileRef = F8925AA91A28A17300BA5388 /* MainScene.csb */; };
 		F8925AAE1A28A17300BA5388 /* title_back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F8925AAA1A28A17300BA5388 /* title_back.jpg */; };
+		F8E3D4B61A3088440003F1FD /* OpScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8E3D4B41A3088440003F1FD /* OpScene.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,8 +119,6 @@
 		46880B7A19C43A67006E1F66 /* HelloWorld.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HelloWorld.png; sourceTree = "<group>"; };
 		46880B8419C43A87006E1F66 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
 		46880B8519C43A87006E1F66 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloWorldScene.cpp; sourceTree = "<group>"; };
-		46880B8719C43A87006E1F66 /* HelloWorldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldScene.h; sourceTree = "<group>"; };
 		503AE0F617EB97AB00D1A890 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		503AE0F717EB97AB00D1A890 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		503AE0FA17EB989F00D1A890 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = ios/AppController.h; sourceTree = SOURCE_ROOT; };
@@ -161,12 +161,18 @@
 		D44C620D132DFF430009C878 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D44C620F132DFF4E0009C878 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D6B0611A1803AB670077942B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		F832F6CE1A31D569006D05A0 /* OpScene.csb */ = {isa = PBXFileReference; lastKnownFileType = file; name = OpScene.csb; path = res/OpScene.csb; sourceTree = "<group>"; };
+		F832F6CF1A31D569006D05A0 /* TitleScene.csb */ = {isa = PBXFileReference; lastKnownFileType = file; name = TitleScene.csb; path = res/TitleScene.csb; sourceTree = "<group>"; };
+		F832F6D21A31D7D2006D05A0 /* MapScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MapScene.cpp; sourceTree = "<group>"; };
+		F832F6D31A31D7D2006D05A0 /* MapScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapScene.h; sourceTree = "<group>"; };
 		F8925AA41A289F9500BA5388 /* TitleScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TitleScene.cpp; sourceTree = "<group>"; };
 		F8925AA51A289F9500BA5388 /* TitleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleScene.h; sourceTree = "<group>"; };
 		F8925AA71A28A17300BA5388 /* cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cloud.png; path = res/cloud.png; sourceTree = "<group>"; };
 		F8925AA81A28A17300BA5388 /* Default */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Default; path = res/Default; sourceTree = "<group>"; };
 		F8925AA91A28A17300BA5388 /* MainScene.csb */ = {isa = PBXFileReference; lastKnownFileType = file; name = MainScene.csb; path = res/MainScene.csb; sourceTree = "<group>"; };
 		F8925AAA1A28A17300BA5388 /* title_back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = title_back.jpg; path = res/title_back.jpg; sourceTree = "<group>"; };
+		F8E3D4B41A3088440003F1FD /* OpScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpScene.cpp; sourceTree = "<group>"; };
+		F8E3D4B51A3088440003F1FD /* OpScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpScene.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,6 +287,8 @@
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F832F6CE1A31D569006D05A0 /* OpScene.csb */,
+				F832F6CF1A31D569006D05A0 /* TitleScene.csb */,
 				F8925AA71A28A17300BA5388 /* cloud.png */,
 				F8925AA81A28A17300BA5388 /* Default */,
 				F8925AA91A28A17300BA5388 /* MainScene.csb */,
@@ -300,10 +308,12 @@
 			children = (
 				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
 				46880B8519C43A87006E1F66 /* AppDelegate.h */,
-				46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */,
-				46880B8719C43A87006E1F66 /* HelloWorldScene.h */,
 				F8925AA41A289F9500BA5388 /* TitleScene.cpp */,
 				F8925AA51A289F9500BA5388 /* TitleScene.h */,
+				F8E3D4B41A3088440003F1FD /* OpScene.cpp */,
+				F8E3D4B51A3088440003F1FD /* OpScene.h */,
+				F832F6D21A31D7D2006D05A0 /* MapScene.cpp */,
+				F832F6D31A31D7D2006D05A0 /* MapScene.h */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -476,8 +486,10 @@
 				50EF629617ECD46A001EB2F8 /* Icon-40.png in Resources */,
 				5087E78217EB970100C73F5D /* Icon-144.png in Resources */,
 				3EACC98F19EE6D4300EB3C5E /* res in Resources */,
+				F832F6D11A31D569006D05A0 /* TitleScene.csb in Resources */,
 				50EF629817ECD46A001EB2F8 /* Icon-80.png in Resources */,
 				5087E78417EB970100C73F5D /* Icon-57.png in Resources */,
+				F832F6D01A31D569006D05A0 /* OpScene.csb in Resources */,
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,
 				F8925AAE1A28A17300BA5388 /* title_back.jpg in Resources */,
 				521A8E6419F0C34300D177D7 /* Default-667h@2x.png in Resources */,
@@ -507,11 +519,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
-				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
+				F832F6D41A31D7D2006D05A0 /* MapScene.cpp in Sources */,
 				F8925AA61A289F9500BA5388 /* TitleScene.cpp in Sources */,
+				F8E3D4B61A3088440003F1FD /* OpScene.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,7 +534,6 @@
 			files = (
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
-				46880B8B19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
