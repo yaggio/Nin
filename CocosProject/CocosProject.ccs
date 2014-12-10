@@ -1,0 +1,12 @@
+<Solution>
+  <PropertyGroup Name="CocosProject" Version="2.0.2.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Image Name="cloud.png" />
+        <Project Name="TitleScene.csd" />
+        <Image Name="title_back.jpg" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>
