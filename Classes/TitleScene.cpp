@@ -32,13 +32,11 @@ bool TitleScene::init()
 
   //Welcome Message
   auto windowSize = Director::getInstance()->getWinSize();
-  
-  node = CSLoader::getInstance()->createNodeFromProtocolBuffers("TitleScene.csb");
+
+  // cocos studio
+  CSLoader::getInstance()->setRecordProtocolBuffersPath(true);
+  node = CSLoader::getInstance()->createNodeFromProtocolBuffers("res/TitleScene.csb");
   this->addChild(node);
-  auto start = dynamic_cast<Button*>(node->getChildByTag(15));
-  start->addTouchEventListener(this, toucheventselector(TitleScene::pushStart));
-  
-  this->scheduleUpdate();
   return true;
 }
 void TitleScene::pushStart(Ref *sender, TouchEventType type)
