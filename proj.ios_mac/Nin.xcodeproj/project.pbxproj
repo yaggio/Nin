@@ -62,6 +62,7 @@
 		D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620D132DFF430009C878 /* AVFoundation.framework */; };
 		D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
 		D6B0611B1803AB670077942B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B0611A1803AB670077942B /* CoreMotion.framework */; };
+		F82E9F561A39C2A500FBD5EB /* Stage1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F82E9F541A39C2A500FBD5EB /* Stage1.cpp */; };
 		F832F6D41A31D7D2006D05A0 /* MapScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F832F6D21A31D7D2006D05A0 /* MapScene.cpp */; };
 		F832F6F01A386D77006D05A0 /* res in Resources */ = {isa = PBXBuildFile; fileRef = F832F6EF1A386D77006D05A0 /* res */; };
 		F8925AA61A289F9500BA5388 /* TitleScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8925AA41A289F9500BA5388 /* TitleScene.cpp */; };
@@ -153,6 +154,8 @@
 		D44C620D132DFF430009C878 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D44C620F132DFF4E0009C878 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D6B0611A1803AB670077942B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		F82E9F541A39C2A500FBD5EB /* Stage1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Stage1.cpp; sourceTree = "<group>"; };
+		F82E9F551A39C2A500FBD5EB /* Stage1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stage1.h; sourceTree = "<group>"; };
 		F832F6D21A31D7D2006D05A0 /* MapScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MapScene.cpp; sourceTree = "<group>"; };
 		F832F6D31A31D7D2006D05A0 /* MapScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapScene.h; sourceTree = "<group>"; };
 		F832F6EF1A386D77006D05A0 /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; name = res; path = ../CocosProject/res; sourceTree = "<group>"; };
@@ -295,6 +298,8 @@
 				F8E3D4B51A3088440003F1FD /* OpScene.h */,
 				F832F6D21A31D7D2006D05A0 /* MapScene.cpp */,
 				F832F6D31A31D7D2006D05A0 /* MapScene.h */,
+				F82E9F541A39C2A500FBD5EB /* Stage1.cpp */,
+				F82E9F551A39C2A500FBD5EB /* Stage1.h */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -492,6 +497,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F82E9F561A39C2A500FBD5EB /* Stage1.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,

@@ -7,7 +7,7 @@
 //
 
 #include "OpScene.h"
-#include "MapScene.h"
+#include "Stage1.h"
 #include "ui/CocosGUI.h"
 #include "cocostudio/CocoStudio.h"
 
@@ -31,10 +31,11 @@ bool OpScene::init()
 
   //Welcome Message
   auto windowSize = Director::getInstance()->getWinSize();
-  node = CSLoader::getInstance()->createNodeFromProtocolBuffers("OpScene.csb");
+  CSLoader::getInstance()->setRecordProtocolBuffersPath(true);
+  node = CSLoader::getInstance()->createNodeFromProtocolBuffers("res/OpScene.csb");
   this->addChild(node);
   
-  auto btn_skip = dynamic_cast<Button*>(node->getChildByName("btn_skip"));
+  auto btn_skip = dynamic_cast<Button*>(node->getChildByName("Button_1"));
   btn_skip->addTouchEventListener(this, toucheventselector(OpScene::pushSkip));
   
   return true;
@@ -45,6 +46,6 @@ void OpScene::pushSkip(Ref *sender, TouchEventType type)
   auto btn = sender;
   MenuItem* menuItem = (MenuItem*)sender;
   log("click tag:%i", menuItem->getTag());
-  Director::getInstance()->replaceScene(TransitionFade::create(1.0f, MapScene::createScene(), Color3B::WHITE));
+  Director::getInstance()->replaceScene(TransitionFade::create(1.0f, Stage1::createScene(), Color3B::WHITE));
 
 }

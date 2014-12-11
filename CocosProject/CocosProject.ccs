@@ -6,6 +6,7 @@
         <Image Name="cloud.png" />
         <Project Name="TitleScene.csd" />
         <Image Name="title_back.jpg" />
+        <Project Name="OpScene.csd" />
       </RootFolder>
     </Group>
   </SolutionFolder>

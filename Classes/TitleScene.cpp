@@ -37,15 +37,15 @@ bool TitleScene::init()
   CSLoader::getInstance()->setRecordProtocolBuffersPath(true);
   node = CSLoader::getInstance()->createNodeFromProtocolBuffers("res/TitleScene.csb");
   this->addChild(node);
-  return true;
-}
-void TitleScene::pushStart(Ref *sender, TouchEventType type)
-{
-  auto btn = sender;
-  MenuItem* menuItem = (MenuItem*)sender;
-  log("click tag:%i", menuItem->getTag());
-  Director::getInstance()->replaceScene(TransitionFade::create(1.0f, OpScene::createScene(), Color3B::WHITE));
+  
+  node->getChildByName<ui::Button*>("Button_1")->addClickEventListener([](Ref *ref) {
+    // ボタン押した時の処理
+    Director::getInstance()->replaceScene(TransitionFade::create(1.0f, OpScene::createScene(), Color3B::WHITE));
+  });
 
+  // move cloud
+  this->scheduleUpdate();
+  return true;
 }
 void TitleScene::update(float delta){
   int clouds[3] = {10, 11, 12};

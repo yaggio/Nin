@@ -2,7 +2,11 @@
   <PropertyGroup Type="Scene" Name="TitleScene" ID="739aa3d2-5e23-4f35-a657-ccd8dd0a4a9b" Version="2.0.2.0" />
   <Content ctype="GameProjectContent">
     <Content>
-      <Animation Duration="0" Speed="1.0000" />
+      <Animation Duration="5" Speed="1.0000">
+        <Timeline ActionTag="-503968702" FrameType="PositionFrame">
+          <PointFrame FrameIndex="5" X="574.8981" Y="950.3439" />
+        </Timeline>
+      </Animation>
       <ObjectData Name="Scene" CanEdit="False" FrameEvent="" ctype="SingleNodeObjectData">
         <Position X="0.0000" Y="0.0000" />
         <Scale ScaleX="1.0000" ScaleY="1.0000" />
