@@ -31,6 +31,10 @@ bool Stage1::init()
   auto label = LabelTTF::create("Stage1", "Arial", 24);
   label->setPosition(windowSize.width / 2, windowSize.height / 2);
   this->addChild(label);
- 
+  
+    // MAP
+  TMXTiledMap* tile_map = TMXTiledMap::create("stage1.tmx");
+  this->addChild(tile_map);
+  
   return true;
 }
