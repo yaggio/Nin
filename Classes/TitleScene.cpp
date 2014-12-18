@@ -37,17 +37,28 @@ bool TitleScene::init()
   CSLoader::getInstance()->setRecordProtocolBuffersPath(true);
   node = CSLoader::getInstance()->createNodeFromProtocolBuffers("res/TitleScene.csb");
   this->addChild(node);
+  // ui layer
+  //Layer *ui_layer = dynamic_cast<Layer*>(CSLoader::getInstance()->createNodeFromProtocolBuffers("res/UiLayer.csb"));
+  //this->addChild(ui_layer);
   
   node->getChildByName<ui::Button*>("Button_1")->addClickEventListener([](Ref *ref) {
-    // ボタン押した時の処理
+   // ボタン押した時の処理
     Director::getInstance()->replaceScene(TransitionFade::create(1.0f, OpScene::createScene(), Color3B::WHITE));
   });
 
+  // spritesheet
+  auto cache = SpriteFrameCache::getInstance();
+  cache->addSpriteFramesWithFile("sprites.plist");
+  sprite = Sprite::createWithSpriteFrameName("nin2.png");
+  sprite->setPosition(-50, 300);
+  sprite->setScale(3);
+  this->addChild(sprite);
   // move cloud
   this->scheduleUpdate();
   return true;
 }
 void TitleScene::update(float delta){
+  // clouds
   int clouds[3] = {10, 11, 12};
   for (int i = 0; i < 3; i++) {
     int tag_no = clouds[i];
@@ -62,4 +73,18 @@ void TitleScene::update(float delta){
     }
     c->setPosition(moved_x, pos.y);
   }
+  // nin
+  auto pos = sprite->getPosition();
+  float moved_x, moved_y;
+  if (pos.x < 640 + 100){
+    moved_x = pos.x + 2;
+  } else {
+    moved_x = 0;
+  }
+  if (pos.x == 640/ 2){
+    moved_y = 330;
+  } else {
+    moved_y = 300;
+  }
+  sprite->setPosition(moved_x, moved_y);
 }

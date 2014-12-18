@@ -22,6 +22,7 @@ class TitleScene : public cocos2d::Layer
   private:
     cocos2d::EventListenerTouchOneByOne *eventListener;
     cocos2d::Node *node;
+    cocos2d::Sprite *sprite;
     void pushStart(cocos2d::Ref *sender, TouchEventType type);
 
   public:

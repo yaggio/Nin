@@ -35,6 +35,13 @@ bool Stage1::init()
     // MAP
   TMXTiledMap* tile_map = TMXTiledMap::create("stage1.tmx");
   this->addChild(tile_map);
+  // spritesheet
+  auto cache = SpriteFrameCache::getInstance();
+  cache->addSpriteFramesWithFile("sprites.plist");
+  Sprite* sprite = Sprite::createWithSpriteFrameName("nin2.png");
+  sprite->setScale(3);
+  sprite->setPosition(300, 16*5 + 32);
+  this->addChild(sprite);
   
   return true;
 }
