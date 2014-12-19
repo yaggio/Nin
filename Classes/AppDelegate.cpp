@@ -23,6 +23,8 @@ void AppDelegate::initGLContextAttrs()
 }
 
 bool AppDelegate::applicationDidFinishLaunching() {
+  log("cocos version: %s", cocos2dVersion());
+
     // initialize director
     auto director = Director::getInstance();
     auto glview = director->getOpenGLView();
