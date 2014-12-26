@@ -34,8 +34,9 @@ bool TitleScene::init()
   auto windowSize = Director::getInstance()->getWinSize();
 
   // cocos studio
-  CSLoader::getInstance()->setRecordProtocolBuffersPath(true);
-  node = CSLoader::getInstance()->createNodeFromProtocolBuffers("res/TitleScene.csb");
+  // CSLoader::getInstance()->setRecordProtocolBuffersPath(true);
+  FileUtils::getInstance()->addSearchPath("res");
+  node = CSLoader::getInstance()->createNode("res/TitleScene.csb");
   this->addChild(node);
   // ui layer
   //Layer *ui_layer = dynamic_cast<Layer*>(CSLoader::getInstance()->createNodeFromProtocolBuffers("res/UiLayer.csb"));

@@ -1,0 +1,464 @@
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   CMakeLists.txt
+	modified:   README.md
+	modified:   cocos2d/AUTHORS
+	modified:   cocos2d/CHANGELOG
+	modified:   cocos2d/CMakeLists.txt
+	modified:   cocos2d/README.cmake
+	modified:   cocos2d/README.md
+	modified:   cocos2d/build/android-build.py
+	modified:   cocos2d/build/cocos2d-wp8.sln
+	modified:   cocos2d/build/cocos2d_libs.xcodeproj/project.pbxproj
+	deleted:    cocos2d/build/cocos2d_libs.xcodeproj/xcuserdata/mamedrix.xcuserdatad/xcschemes/libcocos2d Mac.xcscheme
+	deleted:    cocos2d/build/cocos2d_libs.xcodeproj/xcuserdata/mamedrix.xcuserdatad/xcschemes/libcocos2d iOS.xcscheme
+	deleted:    cocos2d/build/cocos2d_libs.xcodeproj/xcuserdata/mamedrix.xcuserdatad/xcschemes/xcschememanagement.plist
+	modified:   cocos2d/build/cocos2d_tests.xcodeproj/project.pbxproj
+	modified:   cocos2d/build/install-deps-linux.sh
+	modified:   cocos2d/build/wp8/Cocos2dShaderCompiler/Cocos2dShaderCompiler.sln
+	modified:   cocos2d/build/wp8/Cocos2dShaderCompiler/Cocos2dShaderCompiler.vcxproj
+	modified:   cocos2d/build/wp8/Cocos2dShaderCompiler/Cocos2dShaderCompiler.vcxproj.filters
+	modified:   cocos2d/build/wp8/Cocos2dShaderCompiler/ShaderCompiler.cpp
+	modified:   cocos2d/cmake/BuildHelpers.CMakeLists.txt
+	modified:   cocos2d/cmake/Modules/FindGLFW3.cmake
+	modified:   cocos2d/cmake/Modules/FindWebP.cmake
+	modified:   cocos2d/cocos/2d/CCAction.cpp
+	modified:   cocos2d/cocos/2d/CCAction.h
+	modified:   cocos2d/cocos/2d/CCActionCatmullRom.h
+	modified:   cocos2d/cocos/2d/CCCamera.cpp
+	modified:   cocos2d/cocos/2d/CCCamera.h
+	modified:   cocos2d/cocos/2d/CCClippingNode.cpp
+	modified:   cocos2d/cocos/2d/CCClippingNode.h
+	modified:   cocos2d/cocos/2d/CCDrawNode.cpp
+	modified:   cocos2d/cocos/2d/CCFastTMXLayer.cpp
+	modified:   cocos2d/cocos/2d/CCFontAtlas.cpp
+	modified:   cocos2d/cocos/2d/CCFontAtlas.h
+	modified:   cocos2d/cocos/2d/CCFontFNT.cpp
+	modified:   cocos2d/cocos/2d/CCFontFreeType.cpp
+	modified:   cocos2d/cocos/2d/CCLabel.cpp
+	modified:   cocos2d/cocos/2d/CCLabel.h
+	modified:   cocos2d/cocos/2d/CCLabelAtlas.cpp
+	modified:   cocos2d/cocos/2d/CCLabelAtlas.h
+	modified:   cocos2d/cocos/2d/CCLabelBMFont.cpp
+	modified:   cocos2d/cocos/2d/CCLabelBMFont.h
+	modified:   cocos2d/cocos/2d/CCLabelTextFormatter.cpp
+	modified:   cocos2d/cocos/2d/CCLight.cpp
+	modified:   cocos2d/cocos/2d/CCNode.cpp
+	modified:   cocos2d/cocos/2d/CCParticleSystemQuad.cpp
+	modified:   cocos2d/cocos/2d/CCProgressTimer.cpp
+	modified:   cocos2d/cocos/2d/CCRenderTexture.cpp
+	modified:   cocos2d/cocos/2d/CCScene.cpp
+	modified:   cocos2d/cocos/2d/CCScene.h
+	modified:   cocos2d/cocos/2d/CCSprite.cpp
+	modified:   cocos2d/cocos/2d/CCSprite.h
+	modified:   cocos2d/cocos/2d/CCSpriteBatchNode.cpp
+	modified:   cocos2d/cocos/2d/CCSpriteBatchNode.h
+	modified:   cocos2d/cocos/2d/CCSpriteFrame.cpp
+	modified:   cocos2d/cocos/2d/CCSpriteFrame.h
+	modified:   cocos2d/cocos/2d/CCSpriteFrameCache.h
+	modified:   cocos2d/cocos/2d/CCTMXLayer.h
+	modified:   cocos2d/cocos/2d/CCTextFieldTTF.cpp
+	modified:   cocos2d/cocos/2d/CCTextFieldTTF.h
+	modified:   cocos2d/cocos/2d/libcocos2d.vcxproj
+	modified:   cocos2d/cocos/2d/libcocos2d.vcxproj.filters
+	modified:   cocos2d/cocos/2d/libcocos2d_8_1/libcocos2d_8_1/libcocos2d_8_1.Shared/libcocos2d_8_1.Shared.vcxitems
+	modified:   cocos2d/cocos/2d/libcocos2d_8_1/libcocos2d_8_1/libcocos2d_8_1.Shared/libcocos2d_8_1.Shared.vcxitems.filters
+	modified:   cocos2d/cocos/2d/libcocos2d_8_1/libcocos2d_8_1/libcocos2d_8_1.WindowsPhone/libcocos2d_8_1.WindowsPhone.vcxproj
+	modified:   cocos2d/cocos/2d/libcocos2d_wp8.vcxproj
+	modified:   cocos2d/cocos/2d/libcocos2d_wp8.vcxproj.filters
+	modified:   cocos2d/cocos/2d/winrt_8.1_props/cocos2d_winrt_8.1.props
+	modified:   cocos2d/cocos/3d/CCAnimate3D.cpp
+	modified:   cocos2d/cocos/3d/CCAnimate3D.h
+	modified:   cocos2d/cocos/3d/CCAnimation3D.h
+	modified:   cocos2d/cocos/3d/CCAnimationCurve.inl
+	modified:   cocos2d/cocos/3d/CCBillBoard.cpp
+	modified:   cocos2d/cocos/3d/CCBundle3D.cpp
+	modified:   cocos2d/cocos/3d/CCBundle3D.h
+	modified:   cocos2d/cocos/3d/CCBundle3DData.h
+	modified:   cocos2d/cocos/3d/CCBundleReader.cpp
+	modified:   cocos2d/cocos/3d/CCMesh.cpp
+	modified:   cocos2d/cocos/3d/CCMeshSkin.cpp
+	modified:   cocos2d/cocos/3d/CCMeshVertexIndexData.cpp
+	modified:   cocos2d/cocos/3d/CCMeshVertexIndexData.h
+	modified:   cocos2d/cocos/3d/CCOBB.cpp
+	modified:   cocos2d/cocos/3d/CCSprite3D.cpp
+	modified:   cocos2d/cocos/3d/CCSprite3D.h
+	modified:   cocos2d/cocos/3d/CMakeLists.txt
+	modified:   cocos2d/cocos/Android.mk
+	modified:   cocos2d/cocos/CMakeLists.txt
+	modified:   cocos2d/cocos/audio/AudioEngine.cpp
+	modified:   cocos2d/cocos/audio/CMakeLists.txt
+	modified:   cocos2d/cocos/audio/android/AudioEngine-inl.cpp
+	modified:   cocos2d/cocos/audio/android/AudioEngine-inl.h
+	modified:   cocos2d/cocos/audio/apple/AudioCache.h
+	modified:   cocos2d/cocos/audio/apple/AudioCache.mm
+	modified:   cocos2d/cocos/audio/apple/AudioEngine-inl.mm
+	modified:   cocos2d/cocos/audio/apple/AudioPlayer.h
+	modified:   cocos2d/cocos/audio/apple/AudioPlayer.mm
+	modified:   cocos2d/cocos/audio/include/AudioEngine.h
+	modified:   cocos2d/cocos/audio/openal/OpenALDecoder.h
+	modified:   cocos2d/cocos/audio/openal/SimpleAudioEngineOpenAL.cpp
+	modified:   cocos2d/cocos/audio/win32/AudioCache.cpp
+	modified:   cocos2d/cocos/audio/win32/AudioCache.h
+	modified:   cocos2d/cocos/audio/win32/AudioPlayer.cpp
+	modified:   cocos2d/cocos/audio/win32/AudioPlayer.h
+	modified:   cocos2d/cocos/base/CCConsole.cpp
+	modified:   cocos2d/cocos/base/CCDirector.cpp
+	modified:   cocos2d/cocos/base/CCDirector.h
+	modified:   cocos2d/cocos/base/CCEventController.cpp
+	modified:   cocos2d/cocos/base/CCEventFocus.cpp
+	modified:   cocos2d/cocos/base/CCEventKeyboard.h
+	modified:   cocos2d/cocos/base/CCEventListenerTouch.h
+	modified:   cocos2d/cocos/base/CCRef.cpp
+	modified:   cocos2d/cocos/base/CCRef.h
+	modified:   cocos2d/cocos/base/CCScheduler.cpp
+	modified:   cocos2d/cocos/base/CCScriptSupport.h
+	modified:   cocos2d/cocos/base/CCUserDefault-android.cpp
+	modified:   cocos2d/cocos/base/CCValue.cpp
+	modified:   cocos2d/cocos/base/CCValue.h
+	modified:   cocos2d/cocos/base/ZipUtils.cpp
+	modified:   cocos2d/cocos/base/ccMacros.h
+	modified:   cocos2d/cocos/base/ccRandom.h
+	modified:   cocos2d/cocos/cocos2d.cpp
+	modified:   cocos2d/cocos/editor-support/cocosbuilder/CCBKeyframe.cpp
+	modified:   cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CCActionTimeline.cpp
+	modified:   cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CCActionTimeline.h
+	modified:   cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CCActionTimelineCache.cpp
+	modified:   cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CCActionTimelineCache.h
+	modified:   cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CCFrame.cpp
+	modified:   cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CCFrame.h
+	modified:   cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CCTimeLine.cpp
+	modified:   cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CSLoader.cpp
+	modified:   cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CSLoader.h
+	modified:   cocos2d/cocos/editor-support/cocostudio/Android.mk
+	modified:   cocos2d/cocos/editor-support/cocostudio/CCArmatureDataManager.cpp
+	modified:   cocos2d/cocos/editor-support/cocostudio/CCBone.cpp
+	modified:   cocos2d/cocos/editor-support/cocostudio/CCComAudio.cpp
+	modified:   cocos2d/cocos/editor-support/cocostudio/CCDataReaderHelper.cpp
+	modified:   cocos2d/cocos/editor-support/cocostudio/CCDisplayFactory.cpp
+	modified:   cocos2d/cocos/editor-support/cocostudio/CCSGUIReader.cpp
+	modified:   cocos2d/cocos/editor-support/cocostudio/CCSGUIReader.h
+	modified:   cocos2d/cocos/editor-support/cocostudio/CCSSceneReader.cpp
+	modified:   cocos2d/cocos/editor-support/cocostudio/CCSkin.cpp
+	modified:   cocos2d/cocos/editor-support/cocostudio/CCSpriteFrameCacheHelper.cpp
+	modified:   cocos2d/cocos/editor-support/cocostudio/CCSpriteFrameCacheHelper.h
+	modified:   cocos2d/cocos/editor-support/cocostudio/CMakeLists.txt
+	deleted:    cocos2d/cocos/editor-support/cocostudio/CSParseBinary.pb.cc
+	deleted:    cocos2d/cocos/editor-support/cocostudio/CSParseBinary.pb.h
+	modified:   cocos2d/cocos/editor-support/cocostudio/CocoStudio.h
+	modified:   cocos2d/cocos/editor-support/cocostudio/WidgetReader/ButtonReader/ButtonReader.cpp
+	modified:   cocos2d/cocos/editor-support/cocostudio/WidgetReader/ButtonReader/ButtonReader.h
+	modified:   cocos2d/cocos/editor-support/cocostudio/WidgetReader/CheckBoxReader/CheckBoxReader.cpp
+	modified:   cocos2d/cocos/editor-support/cocostudio/WidgetReader/CheckBoxReader/CheckBoxReader.h
+	modified:   cocos2d/cocos/editor-support/cocostudio/WidgetReader/ImageViewReader/ImageViewReader.cpp
+	modified:   cocos2d/cocos/editor-support/cocostudio/WidgetReader/ImageViewReader/ImageViewReader.h
+	modified:   cocos2d/cocos/editor-support/cocostudio/WidgetReader/LayoutReader/LayoutReader.cpp
+	modified:   cocos2d/cocos/editor-support/cocostudio/WidgetReader/LayoutReader/LayoutReader.h
+	modified:   cocos2d/cocos/editor-support/cocostudio/WidgetReader/ListViewReader/ListViewReader.cpp
+	modified:   cocos2d/cocos/editor-support/cocostudio/WidgetReader/ListViewReader/ListViewReader.h
+	modified:   cocos2d/cocos/editor-support/cocostudio/WidgetReader/LoadingBarReader/LoadingBarReader.cpp
+	modified:   cocos2d/cocos/editor-support/cocostudio/WidgetReader/LoadingBarReader/LoadingBarReader.h
+	modified:   cocos2d/cocos/editor-support/cocostudio/WidgetReader/PageViewReader/PageViewReader.cpp
+	modified:   cocos2d/cocos/editor-support/cocostudio/WidgetReader/PageViewReader/PageViewReader.h
+	modified:   cocos2d/cocos/editor-support/cocostudio/WidgetReader/ScrollViewReader/ScrollViewReader.cpp
+	modified:   cocos2d/cocos/editor-support/cocostudio/WidgetReader/ScrollViewReader/ScrollViewReader.h
+	modified:   cocos2d/cocos/editor-support/cocostudio/WidgetReader/SliderReader/SliderReader.cpp
+	modified:   cocos2d/cocos/editor-support/cocostudio/WidgetReader/SliderReader/SliderReader.h
+	modified:   cocos2d/cocos/editor-support/cocostudio/WidgetReader/TextAtlasReader/TextAtlasReader.cpp
+	modified:   cocos2d/cocos/editor-support/cocostudio/WidgetReader/TextAtlasReader/TextAtlasReader.h
+	modified:   cocos2d/cocos/editor-support/cocostudio/WidgetReader/TextBMFontReader/TextBMFontReader.cpp
+	modified:   cocos2d/cocos/editor-support/cocostudio/WidgetReader/TextBMFontReader/TextBMFontReader.h
+	modified:   cocos2d/cocos/editor-support/cocostudio/WidgetReader/TextFieldReader/TextFieldReader.cpp
+	modified:   cocos2d/cocos/editor-support/cocostudio/WidgetReader/TextFieldReader/TextFieldReader.h
+	modified:   cocos2d/cocos/editor-support/cocostudio/WidgetReader/TextReader/TextReader.cpp
+	modified:   cocos2d/cocos/editor-support/cocostudio/WidgetReader/TextReader/TextReader.h
+	modified:   cocos2d/cocos/editor-support/cocostudio/WidgetReader/WidgetReader.cpp
+	modified:   cocos2d/cocos/editor-support/cocostudio/WidgetReader/WidgetReader.h
+	modified:   cocos2d/cocos/editor-support/cocostudio/WidgetReader/WidgetReaderProtocol.h
+	modified:   cocos2d/cocos/editor-support/spine/proj.win8.1-universal/libSpine.Shared/libSpine.Shared.vcxitems
+	modified:   cocos2d/cocos/editor-support/spine/proj.win8.1-universal/libSpine.Shared/libSpine.Shared.vcxitems.filters
+	modified:   cocos2d/cocos/math/Mat4.cpp
+	modified:   cocos2d/cocos/math/Mat4.h
+	modified:   cocos2d/cocos/math/MathUtil.cpp
+	modified:   cocos2d/cocos/math/MathUtilNeon64.inl
+	modified:   cocos2d/cocos/math/Vec2.h
+	modified:   cocos2d/cocos/math/Vec2.inl
+	modified:   cocos2d/cocos/network/HttpClient.cpp
+	modified:   cocos2d/cocos/network/SocketIO.h
+	modified:   cocos2d/cocos/network/WebSocket.cpp
+	modified:   cocos2d/cocos/platform/CCFileUtils.cpp
+	modified:   cocos2d/cocos/platform/CCFileUtils.h
+	modified:   cocos2d/cocos/platform/CCImage.cpp
+	modified:   cocos2d/cocos/platform/CCPlatformMacros.h
+	modified:   cocos2d/cocos/platform/android/CCApplication-android.cpp
+	modified:   cocos2d/cocos/platform/android/java/src/org/cocos2dx/lib/Cocos2dxAccelerometer.java
+	modified:   cocos2d/cocos/platform/android/java/src/org/cocos2dx/lib/Cocos2dxActivity.java
+	modified:   cocos2d/cocos/platform/android/java/src/org/cocos2dx/lib/Cocos2dxBitmap.java
+	modified:   cocos2d/cocos/platform/android/java/src/org/cocos2dx/lib/Cocos2dxEditBoxDialog.java
+	modified:   cocos2d/cocos/platform/android/java/src/org/cocos2dx/lib/Cocos2dxEditText.java
+	modified:   cocos2d/cocos/platform/android/java/src/org/cocos2dx/lib/Cocos2dxMusic.java
+	modified:   cocos2d/cocos/platform/android/java/src/org/cocos2dx/lib/Cocos2dxRenderer.java
+	modified:   cocos2d/cocos/platform/android/java/src/org/cocos2dx/lib/Cocos2dxSound.java
+	modified:   cocos2d/cocos/platform/android/java/src/org/cocos2dx/lib/Cocos2dxTypefaces.java
+	modified:   cocos2d/cocos/platform/android/java/src/org/cocos2dx/lib/Cocos2dxVideoHelper.java
+	modified:   cocos2d/cocos/platform/android/java/src/org/cocos2dx/lib/Cocos2dxVideoView.java
+	modified:   cocos2d/cocos/platform/android/java/src/org/cocos2dx/lib/Cocos2dxWebView.java
+	modified:   cocos2d/cocos/platform/android/java/src/org/cocos2dx/lib/Cocos2dxWebViewHelper.java
+	modified:   cocos2d/cocos/platform/android/jni/Java_org_cocos2dx_lib_Cocos2dxRenderer.cpp
+	modified:   cocos2d/cocos/platform/android/jni/TouchesJni.cpp
+	modified:   cocos2d/cocos/platform/apple/CCFileUtils-apple.mm
+	modified:   cocos2d/cocos/platform/desktop/CCGLViewImpl-desktop.cpp
+	modified:   cocos2d/cocos/platform/ios/CCEAGLView-ios.mm
+	modified:   cocos2d/cocos/platform/ios/CCGLViewImpl-ios.mm
+	modified:   cocos2d/cocos/platform/linux/CCFileUtils-linux.cpp
+	modified:   cocos2d/cocos/platform/linux/CCStdC-linux.cpp
+	modified:   cocos2d/cocos/platform/mac/CCDevice-mac.mm
+	modified:   cocos2d/cocos/platform/win32/CCApplication-win32.cpp
+	modified:   cocos2d/cocos/platform/winrt/CCApplication.cpp
+	modified:   cocos2d/cocos/platform/winrt/CCCommon.cpp
+	modified:   cocos2d/cocos/platform/winrt/CCDevice.cpp
+	modified:   cocos2d/cocos/platform/winrt/CCGLViewImpl-winrt.cpp
+	modified:   cocos2d/cocos/platform/winrt/CCGLViewImpl-winrt.h
+	modified:   cocos2d/cocos/platform/winrt/CCPrecompiledShaders.cpp
+	modified:   cocos2d/cocos/platform/winrt/CCPrecompiledShaders.h
+	modified:   cocos2d/cocos/platform/winrt/CCWinRTUtils.cpp
+	modified:   cocos2d/cocos/platform/winrt/CCWinRTUtils.h
+	modified:   cocos2d/cocos/platform/winrt/InputEvent.cpp
+	modified:   cocos2d/cocos/platform/winrt/InputEvent.h
+	modified:   cocos2d/cocos/platform/winrt/InputEventTypes.h
+	modified:   cocos2d/cocos/platform/wp8-xaml/cpp/Cocos2dRenderer.cpp
+	modified:   cocos2d/cocos/platform/wp8-xaml/cpp/Cocos2dRenderer.h
+	modified:   cocos2d/cocos/platform/wp8-xaml/cpp/Direct3DContentProvider.cpp
+	modified:   cocos2d/cocos/platform/wp8-xaml/cpp/Direct3DContentProvider.h
+	modified:   cocos2d/cocos/platform/wp8-xaml/cpp/Direct3DInterop.cpp
+	modified:   cocos2d/cocos/platform/wp8-xaml/cpp/Direct3DInterop.h
+	modified:   cocos2d/cocos/platform/wp8-xaml/cpp/EditBoxEvent.cpp
+	modified:   cocos2d/cocos/platform/wp8-xaml/cpp/EditBoxEvent.h
+	modified:   cocos2d/cocos/platform/wp8-xaml/xaml/App.xaml
+	modified:   cocos2d/cocos/platform/wp8-xaml/xaml/App.xaml.cs
+	modified:   cocos2d/cocos/platform/wp8-xaml/xaml/EditBox.xaml
+	modified:   cocos2d/cocos/platform/wp8-xaml/xaml/EditBox.xaml.cs
+	modified:   cocos2d/cocos/platform/wp8-xaml/xaml/MainPage.xaml
+	modified:   cocos2d/cocos/platform/wp8-xaml/xaml/MainPage.xaml.cs
+	modified:   cocos2d/cocos/platform/wp8/CCGLViewImpl-wp8.cpp
+	modified:   cocos2d/cocos/platform/wp8/CCGLViewImpl-wp8.h
+	modified:   cocos2d/cocos/platform/wp8/shaders/precompiledshaders.h
+	modified:   cocos2d/cocos/renderer/CCGLProgram.cpp
+	modified:   cocos2d/cocos/renderer/CCGLProgram.h
+	modified:   cocos2d/cocos/renderer/CCGLProgramCache.cpp
+	modified:   cocos2d/cocos/renderer/CCGLProgramState.cpp
+	modified:   cocos2d/cocos/renderer/CCGLProgramState.h
+	modified:   cocos2d/cocos/renderer/CCMeshCommand.cpp
+	modified:   cocos2d/cocos/renderer/CCMeshCommand.h
+	modified:   cocos2d/cocos/renderer/CCVertexIndexBuffer.cpp
+	modified:   cocos2d/cocos/renderer/CCVertexIndexData.h
+	modified:   cocos2d/cocos/renderer/ccShaders.cpp
+	modified:   cocos2d/cocos/ui/CMakeLists.txt
+	modified:   cocos2d/cocos/ui/UIButton.cpp
+	modified:   cocos2d/cocos/ui/UIButton.h
+	modified:   cocos2d/cocos/ui/UICheckBox.cpp
+	modified:   cocos2d/cocos/ui/UICheckBox.h
+	modified:   cocos2d/cocos/ui/UIEditBox/UIEditBox.cpp
+	modified:   cocos2d/cocos/ui/UIEditBox/UIEditBoxImpl-ios.h
+	modified:   cocos2d/cocos/ui/UIEditBox/UIEditBoxImpl-ios.mm
+	modified:   cocos2d/cocos/ui/UIEditBox/UIEditBoxImpl-stub.cpp
+	modified:   cocos2d/cocos/ui/UIEditBox/UIEditBoxImpl-win32.cpp
+	modified:   cocos2d/cocos/ui/UIEditBox/UIEditBoxImpl-wp8.cpp
+	modified:   cocos2d/cocos/ui/UIImageView.cpp
+	modified:   cocos2d/cocos/ui/UIImageView.h
+	modified:   cocos2d/cocos/ui/UILayout.cpp
+	modified:   cocos2d/cocos/ui/UILayoutComponent.cpp
+	modified:   cocos2d/cocos/ui/UIListView.cpp
+	modified:   cocos2d/cocos/ui/UILoadingBar.cpp
+	modified:   cocos2d/cocos/ui/UIPageView.cpp
+	modified:   cocos2d/cocos/ui/UIScale9Sprite.cpp
+	modified:   cocos2d/cocos/ui/UIScale9Sprite.h
+	modified:   cocos2d/cocos/ui/UIScrollView.cpp
+	modified:   cocos2d/cocos/ui/UISlider.cpp
+	modified:   cocos2d/cocos/ui/UIText.cpp
+	modified:   cocos2d/cocos/ui/UIText.h
+	modified:   cocos2d/cocos/ui/UITextAtlas.cpp
+	modified:   cocos2d/cocos/ui/UITextBMFont.cpp
+	modified:   cocos2d/cocos/ui/UITextField.cpp
+	modified:   cocos2d/cocos/ui/UIVideoPlayer.h
+	modified:   cocos2d/cocos/ui/UIWidget.cpp
+	modified:   cocos2d/cocos/ui/UIWidget.h
+	modified:   cocos2d/docs/RELEASE_NOTES.md
+	modified:   cocos2d/download-deps.py
+	modified:   cocos2d/extensions/CMakeLists.txt
+	modified:   cocos2d/extensions/GUI/CCScrollView/CCScrollView.cpp
+	modified:   cocos2d/extensions/assets-manager/AssetsManager.cpp
+	modified:   cocos2d/extensions/assets-manager/AssetsManagerEx.cpp
+	modified:   cocos2d/extensions/assets-manager/AssetsManagerEx.h
+	modified:   cocos2d/extensions/assets-manager/CCEventAssetsManagerEx.cpp
+	modified:   cocos2d/extensions/assets-manager/Downloader.cpp
+	modified:   cocos2d/extensions/assets-manager/Manifest.cpp
+	modified:   cocos2d/extensions/assets-manager/Manifest.h
+	modified:   cocos2d/external/config.json
+	modified:   cocos2d/external/curl/prebuilt/android/Android.mk
+	modified:   cocos2d/external/curl/prebuilt/android/armeabi-v7a/libcurl.a
+	modified:   cocos2d/external/curl/prebuilt/android/armeabi/libcurl.a
+	modified:   cocos2d/external/curl/prebuilt/android/x86/libcurl.a
+	deleted:    cocos2d/external/protobuf-lite/Android.mk
+	deleted:    cocos2d/external/protobuf-lite/CMakeLists.txt
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/config.h
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/extension_set.cc
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/extension_set.h
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/generated_message_util.cc
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/generated_message_util.h
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/io/coded_stream.cc
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/io/coded_stream.h
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/io/coded_stream_inl.h
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/io/zero_copy_stream.cc
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/io/zero_copy_stream.h
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/io/zero_copy_stream_impl.cc
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/io/zero_copy_stream_impl.h
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/io/zero_copy_stream_impl_lite.cc
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/io/zero_copy_stream_impl_lite.h
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/message_lite.cc
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/message_lite.h
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/repeated_field.cc
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/repeated_field.h
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/stubs/atomicops.h
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/stubs/atomicops_internals_arm_gcc.h
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/stubs/atomicops_internals_arm_qnx.h
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/stubs/atomicops_internals_atomicword_compat.h
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/stubs/atomicops_internals_macosx.h
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/stubs/atomicops_internals_mips_gcc.h
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/stubs/atomicops_internals_pnacl.h
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/stubs/atomicops_internals_x86_gcc.cc
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/stubs/atomicops_internals_x86_gcc.h
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/stubs/atomicops_internals_x86_msvc.cc
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/stubs/atomicops_internals_x86_msvc.h
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/stubs/common.cc
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/stubs/common.h
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/stubs/hash.h
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/stubs/map-util.h
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/stubs/once.cc
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/stubs/once.h
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/stubs/platform_macros.h
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/stubs/stl_util.h
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/stubs/stringprintf.cc
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/stubs/stringprintf.h
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/stubs/template_util.h
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/stubs/type_traits.h
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/wire_format_lite.cc
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/wire_format_lite.h
+	deleted:    cocos2d/external/protobuf-lite/src/google/protobuf/wire_format_lite_inl.h
+	deleted:    cocos2d/external/protobuf-lite/win32/config.h
+	modified:   cocos2d/external/tiff/prebuilt/winrt_8.1/arm/libtiff.lib
+	modified:   cocos2d/external/tiff/prebuilt/winrt_8.1/win32/libtiff.lib
+	modified:   cocos2d/external/tiff/prebuilt/wp_8.1/arm/libtiff.lib
+	modified:   cocos2d/external/tiff/prebuilt/wp_8.1/win32/libtiff.lib
+	modified:   cocos2d/external/version.json
+	modified:   cocos2d/external/winrt_8.1-specific/angle/include/EGL/eglext.h
+	modified:   cocos2d/external/winrt_8.1-specific/angle/include/EGL/eglplatform.h
+	modified:   cocos2d/external/winrt_8.1-specific/angle/include/GLSLANG/ShaderLang.h
+	modified:   cocos2d/external/winrt_8.1-specific/angle/include/GLSLANG/ShaderVars.h
+	modified:   cocos2d/external/winrt_8.1-specific/angle/include/angle_windowsstore.h
+	modified:   cocos2d/external/winrt_8.1-specific/angle/prebuilt/arm/libEGL.lib
+	modified:   cocos2d/external/winrt_8.1-specific/angle/prebuilt/arm/libGLESv2.lib
+	modified:   cocos2d/external/winrt_8.1-specific/angle/prebuilt/win32/libEGL.lib
+	modified:   cocos2d/external/winrt_8.1-specific/angle/prebuilt/win32/libGLESv2.lib
+	modified:   cocos2d/external/wp_8.1-specific/angle/include/EGL/eglext.h
+	modified:   cocos2d/external/wp_8.1-specific/angle/include/EGL/eglplatform.h
+	modified:   cocos2d/external/wp_8.1-specific/angle/include/GLSLANG/ShaderLang.h
+	modified:   cocos2d/external/wp_8.1-specific/angle/include/GLSLANG/ShaderVars.h
+	modified:   cocos2d/external/wp_8.1-specific/angle/include/angle_windowsstore.h
+	modified:   cocos2d/external/wp_8.1-specific/angle/prebuilt/arm/libEGL.lib
+	modified:   cocos2d/external/wp_8.1-specific/angle/prebuilt/arm/libGLESv2.lib
+	modified:   cocos2d/external/wp_8.1-specific/angle/prebuilt/win32/libEGL.lib
+	modified:   cocos2d/external/wp_8.1-specific/angle/prebuilt/win32/libGLESv2.lib
+	modified:   cocos2d/plugin/luabindings/manual/lua_pluginx_manual_callback.cpp
+	modified:   cocos2d/plugin/plugins/admob/proj.ios/PluginAdmob.xcodeproj/project.pbxproj
+	modified:   cocos2d/plugin/plugins/facebook/proj.android/sdk/facebooksdk.jar
+	modified:   cocos2d/plugin/plugins/facebook/proj.android/src/org/cocos2dx/plugin/ShareFacebook.java
+	modified:   cocos2d/plugin/plugins/facebook/proj.android/src/org/cocos2dx/plugin/UserFacebook.java
+	modified:   cocos2d/plugin/plugins/facebook/proj.ios/PluginFacebook.xcodeproj/project.pbxproj
+	modified:   cocos2d/plugin/plugins/facebook/proj.ios/PluginFacebook/ShareFacebook.h
+	modified:   cocos2d/plugin/plugins/facebook/proj.ios/PluginFacebook/ShareFacebook.m
+	modified:   cocos2d/plugin/plugins/facebook/proj.ios/PluginFacebook/UserFacebook.h
+	modified:   cocos2d/plugin/plugins/facebook/proj.ios/PluginFacebook/UserFacebook.m
+	modified:   cocos2d/plugin/plugins/facebook/proj.ios/sdk/FacebookSDK.framework/FacebookSDK
+	modified:   cocos2d/plugin/plugins/facebook/proj.ios/sdk/FacebookSDK.framework/Versions/A/DeprecatedHeaders/FBSettings.h
+	modified:   cocos2d/plugin/plugins/facebook/proj.ios/sdk/FacebookSDK.framework/Versions/A/FacebookSDK
+	modified:   cocos2d/plugin/plugins/facebook/proj.ios/sdk/FacebookSDK.framework/Versions/A/Headers/FBSettings.h
+	modified:   cocos2d/plugin/plugins/flurry/proj.ios/PluginFlurry.xcodeproj/project.pbxproj
+	modified:   cocos2d/plugin/plugins/iosiap/proj.ios/PluginIAP.xcodeproj/project.pbxproj
+	modified:   cocos2d/plugin/plugins/twitter/proj.ios/PluginTwitter.xcodeproj/project.pbxproj
+	modified:   cocos2d/plugin/plugins/umeng/proj.ios/PluginUmeng.xcodeproj/project.pbxproj
+	modified:   cocos2d/plugin/plugins/weibo/proj.ios/PluginWeibo.xcodeproj/project.pbxproj
+	modified:   cocos2d/plugin/protocols/include/FacebookAgent.h
+	modified:   cocos2d/plugin/protocols/platform/android/FacebookAgent.cpp
+	modified:   cocos2d/plugin/protocols/platform/ios/FacebookAgent.mm
+	modified:   cocos2d/plugin/protocols/platform/ios/PluginProtocol.mm
+	modified:   cocos2d/plugin/protocols/proj.ios/PluginProtocol.xcodeproj/project.pbxproj
+	modified:   cocos2d/plugin/tools/config.sh
+	modified:   cocos2d/tools/fbx-conv/README.md
+	modified:   cocos2d/tools/fbx-conv/mac/fbx-conv
+	modified:   proj.ios_mac/Nin.xcodeproj/project.xcworkspace/xcuserdata/yajima.xcuserdatad/UserInterfaceState.xcuserstate
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	cocos2d/build/cocos2d-win8.1-universal.sln
+	cocos2d/build/wp8/Cocos2dShaderCompiler/Assets/
+	cocos2d/cmake/Modules/CocosBuildHelpers.cmake
+	cocos2d/cmake/Modules/CocosUsePrebuiltLibs.cmake
+	cocos2d/cmake/Modules/FindCURL.cmake
+	cocos2d/cmake/Modules/FindFMODEX.cmake
+	cocos2d/cmake/Modules/FindFontconfig.cmake
+	cocos2d/cmake/Modules/FindFreetype.cmake
+	cocos2d/cmake/Modules/FindJPEG.cmake
+	cocos2d/cmake/Modules/FindMINIZIP.cmake
+	cocos2d/cmake/Modules/FindMPG123.cmake
+	cocos2d/cmake/Modules/FindOgg.cmake
+	cocos2d/cmake/Modules/FindPNG.cmake
+	cocos2d/cmake/Modules/FindPkgConfig.cmake
+	cocos2d/cmake/Modules/FindTIFF.cmake
+	cocos2d/cmake/Modules/FindTinyXML2.cmake
+	cocos2d/cmake/Modules/FindVorbis.cmake
+	cocos2d/cmake/Modules/FindWEBSOCKETS.cmake
+	cocos2d/cmake/Modules/SelectLibraryConfigurations.cmake
+	cocos2d/cocos/editor-support/cocostudio/CSParseBinary_generated.h
+	cocos2d/cocos/editor-support/cocostudio/FlatBuffersSerialize.cpp
+	cocos2d/cocos/editor-support/cocostudio/FlatBuffersSerialize.h
+	cocos2d/cocos/editor-support/cocostudio/WidgetCallBackHandlerProtocol.cpp
+	cocos2d/cocos/editor-support/cocostudio/WidgetCallBackHandlerProtocol.h
+	cocos2d/cocos/editor-support/cocostudio/WidgetReader/ComAudioReader/
+	cocos2d/cocos/editor-support/cocostudio/WidgetReader/GameMapReader/
+	cocos2d/cocos/editor-support/cocostudio/WidgetReader/NodeReader/
+	cocos2d/cocos/editor-support/cocostudio/WidgetReader/NodeReaderDefine.cpp
+	cocos2d/cocos/editor-support/cocostudio/WidgetReader/NodeReaderDefine.h
+	cocos2d/cocos/editor-support/cocostudio/WidgetReader/NodeReaderProtocol.cpp
+	cocos2d/cocos/editor-support/cocostudio/WidgetReader/NodeReaderProtocol.h
+	cocos2d/cocos/editor-support/cocostudio/WidgetReader/ParticleReader/
+	cocos2d/cocos/editor-support/cocostudio/WidgetReader/ProjectNodeReader/
+	cocos2d/cocos/editor-support/cocostudio/WidgetReader/SingleNodeReader/
+	cocos2d/cocos/editor-support/cocostudio/WidgetReader/SpriteReader/
+	cocos2d/cocos/platform/win8.1-universal/
+	cocos2d/cocos/platform/winrt/Keyboard-winrt.cpp
+	cocos2d/cocos/platform/winrt/Keyboard-winrt.h
+	cocos2d/cocos/renderer/ccShader_Position_uColor-no-gl_PointSize.vert
+	cocos2d/cocos/ui/UIEditBox/UIEditBoxImpl-winrt.cpp
+	cocos2d/cocos/ui/UIEditBox/UIEditBoxImpl-winrt.h
+	cocos2d/docs/CONTRIBUTE.md
+	cocos2d/docs/RELEASE_ENGINEERING.md
+	cocos2d/external/curl/prebuilt/android/armeabi-v7a/libcrypto.a
+	cocos2d/external/curl/prebuilt/android/armeabi-v7a/libssl.a
+	cocos2d/external/curl/prebuilt/android/armeabi/libcrypto.a
+	cocos2d/external/curl/prebuilt/android/armeabi/libssl.a
+	cocos2d/external/curl/prebuilt/android/x86/libcrypto.a
+	cocos2d/external/curl/prebuilt/android/x86/libssl.a
+	cocos2d/external/flatbuffers/
+	cocos2d/plugin/plugins/facebook/proj.ios/sdk/FacebookSDK.framework/Headers/
+	cocos2d/plugin/plugins/facebook/proj.ios/sdk/FacebookSDK.framework/Resources/
+	cocos2d/plugin/plugins/facebook/proj.ios/sdk/FacebookSDK.framework/Versions/Current/
+	cocos2d/plugin/plugins/facebookads/proj.ios/FBAudienceNetwork.framework/Headers/
+	cocos2d/plugin/plugins/facebookads/proj.ios/FBAudienceNetwork.framework/Versions/Current/
+	st.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")

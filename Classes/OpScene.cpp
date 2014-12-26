@@ -31,8 +31,7 @@ bool OpScene::init()
 
   //Welcome Message
   auto windowSize = Director::getInstance()->getWinSize();
-  CSLoader::getInstance()->setRecordProtocolBuffersPath(true);
-  node = CSLoader::getInstance()->createNodeFromProtocolBuffers("res/OpScene.csb");
+  node = CSLoader::getInstance()->createNode("res/OpScene.csb");
   this->addChild(node);
   
   auto btn_skip = dynamic_cast<Button*>(node->getChildByName("Button_1"));
